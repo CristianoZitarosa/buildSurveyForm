@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="freeCodeCamp - Build a Survey Form"/>
+
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>freeCodeCamp - Build a Survey Form</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <div class="container">
+    <div class="row">
+      <p id="description">
+        Send a few personal data to unknown people. It's free, until it lasts!
+      </p>
+    </div>
+    <form id="survey-form">
+      <div class="row">
+        <div class="left">
+          <label id="name-label" for="name">Name:*</label>
+        </div>
+        <div class="right">
+          <input type="text" placeholder="Your name here" id="name" required>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="left">
+          <label id="email-label"  for="email">Email:*</label>
+        </div>
+        <div class="right">
+          <input type="email" placeholder="Your email here" id="email" required>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="left">
+          <label id="number-label" for="number">Age:</label>
+        </div>
+        <div class="right">
+          <input type="number" placeholder="How old are you?" id="number" required min="5" max="120">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="left">
+          <label id="question-label" for="dropdown">From 1 to 5, how much do you trust unknown people on internet?:</label>
+        </div>
+        <div class="right">
+          <select id="dropdown" name="question" required>
+            <option disabled value>Select one:</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="left">
+          <label for="valutation">How likely is that you will share your credit card number?</label>
+        </div>
+        <div class="right">
+          <ul id="valutation">
+            <li>
+              <label>Definitely
+                <input type="radio" name="radio-buttons" value="1">
+              </label>
+            </li>
+            <li>
+              <label>Maybe
+                <input type="radio" name="radio-buttons" value="1">
+              </label>
+            </li>
+            <li>
+              <label>Not sure
+                <input type="radio" name="radio-buttons" value="1">
+              </label>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="left">
+          <label for="bankName">Tell us the name/s of your bank/s.</label>
+        </div>
+        <div class="right">
+          <ul id="bankName">
+            <li>
+              <label>Rich Bank
+                <input type="checkbox" name="checkbox" value="1">
+              </label>
+            </li>
+            <li>
+              <label>Poor Bank
+                <input type="checkbox" name="checkbox" value="1">
+              </label>
+            </li>
+            <li>
+              <label>Wannabe Bank
+                <input type="checkbox" name="checkbox" value="1">
+              </label>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="left">
+          <label for="comment">Anything else of personal you want provide us...to let us know you better!</label>
+        </div>
+        <div class="right">
+          <textarea id="comment" placeholder="Put everything here..."></textarea>
+        </div>
+      </div>
+
+      <button id="submit" type="submit" value="Submit">Submit</button>
+
+      </form>
+    </div>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+  </html>

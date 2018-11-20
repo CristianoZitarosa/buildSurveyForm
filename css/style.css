@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+body {
+  background: #88edff;
+  font-family: 'Nunito', sans-serif;
+}
+
+#title,
+#description {
+  text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+#survey-form {
+  background: #bcf5ff;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  margin: 10px 0;
+  padding: 15px;
+}
+
+.left {
+  width: 50%;
+  text-align: right;
+  margin-right: 20px;
+}
+
+.right {
+  width: 50%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: right;
+}
+
+input,
+textarea,
+#number {
+  padding: 6px;
+  width: 130px;
+}
+
+textarea {
+  height: 150px;
+}
+
+input[type=radio],
+input[type=checkbox] {
+  width: 14px;
+}
+
+#submit {
+  background-color: #88edff;
+  border: 2px solid #88edff;
+  border-radius: 3px;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  margin-left: 400px;
+}
+
+#submit:hover {
+  background-color: #bcf5ff;
+  border: 2px solid #88edff;
+}

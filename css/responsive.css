@@ -1,0 +1,65 @@
+@media screen and (max-width: 411px) {
+
+  .row {
+    padding: 0;
+  }
+
+  .left {
+    margin-right: 10px;
+  }
+
+  input {
+    width: 130px;
+  }
+
+  li {
+    margin: 10px 0;
+  }
+
+ #submit {
+    margin-left: 192px;
+  }
+
+}
+
+@media screen and (min-width: 412px) {
+
+  .container {
+    width: 60%;
+  }
+
+  ul {
+    margin-right: 50px;
+  }
+
+}
+
+@media screen and (min-width: 750px) and (max-width: 780px) {
+
+  .container {
+    width: 75%;
+  }
+
+}
+
+@media screen and (min-width: 1000px) {
+
+  .container {
+    width: 800px;
+  }
+
+  #submit {
+    margin-left: 620px;
+  }
+
+  ul {
+    margin-right: 180px;
+  }
+
+  input,
+  textarea,
+  #number {
+    width: 250px;
+  }
+
+}
